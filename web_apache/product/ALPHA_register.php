@@ -90,7 +90,7 @@
         <script language='javascript' type='text/javascript'>
 		    function check(input) {
 		        if (input.value != document.getElementById('password').value) {
-		            input.setCustomValidity('Password Must be Matching.');
+		            input.setCustomValidity("Passwords Don't Match :(");
 		        } else {
 		            // input is valid -- reset the error message
 		            input.setCustomValidity('');
