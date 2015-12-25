@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>date.js</string>
+		</array>
+		<array>
+			<string>excanvas.min.js</string>
+		</array>
+		<array>
+			<string>jquery-2.1.1.min.js</string>
+		</array>
+		<array>
+			<string>jquery-ui-1.10.4.min.js</string>
+		</array>
+		<array>
+			<string>less-1.7.0.js</string>
+		</array>
+		<array>
+			<string>less-1.7.0.min.js</string>
+		</array>
+		<array>
+			<string>modernizr.custom.js</string>
+		</array>
+		<array>
+			<string>moment-with-locales.js</string>
+		</array>
+		<array>
+			<string>moment.js</string>
+		</array>
+		<array>
+			<string>raphael-min.js</string>
+		</array>
+		<array>
+			<string>raphael.js</string>
+		</array>
+		<array>
+			<string>respond.min.js</string>
+		</array>
+		<array>
+			<string>typeahead.bundle.js</string>
+		</array>
+		<array>
+			<string>typeahead.jquery.min.js</string>
+		</array>
+	</array>
+</dict>
+</plist>
