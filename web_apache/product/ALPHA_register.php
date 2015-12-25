@@ -33,6 +33,8 @@
         <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
         <meta name="msapplication-TileColor" content="#3399cc" />
     </head>
+    
+    
     <body class="login-page">
         <!-- Start login container -->
         <div class="container login-container">
@@ -40,16 +42,16 @@
                 <!-- Start .panel -->
                 <div class="panel-heading">
                     <h4 class="panel-title text-center">
-                        <img id="logo" src="img/logo-dark.png" alt="Dynamic logo">
+                        DataHub
                     </h4>
                 </div>
                 <div class="panel-body">
-                    <form class="form-horizontal mt0" action="#" id="register-form" role="form">
+                    <form class="form-horizontal mt0" action="ALPHA_register_result.php" id="register-form" role="form" method="POST">
                         <div class="form-group">
                             <div class="col-lg-12">
                                 <div class="input-group input-icon">
                                     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                    <input type="text" name="email" id="email" class="form-control" placeholder="Type your email ...">
+                                    <input type="text" name="email" id="email" class="form-control" placeholder="Your email ...">
                                 </div>
                             </div>
                         </div>
@@ -75,18 +77,14 @@
                 <div class="panel-footer gray-lighter-bg bt">
                     <h4 class="text-center"><strong>Already have an account ?</strong>
                     </h4>
-                    <p class="text-center"><a href="login.html" class="btn btn-primary">Sign in</a>
+                    <p class="text-center"><a href="ALPHA_login.php" class="btn btn-primary">Sign in</a>
                     </p>
                 </div>
             </div>
             <!-- End .panel -->
         </div>
         <!-- End login container -->
-        <div class="container">
-            <div class="footer">
-                <p class="text-center">&copy;2014 Copyright Dynamic admin. All right reserved !!!</p>
-            </div>
-        </div>
+
         <!-- Javascripts -->
         <!-- Important javascript libs(put in all pages) -->
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>

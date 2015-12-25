@@ -53,7 +53,7 @@
                 </div>
                 
                 <div class="panel-body">
-                    <form class="form-horizontal mt0" action="index.html" id="login-form" role="form">
+                    <form class="form-horizontal mt0" action="ALPHA_login_result.php" id="login-form" role="form" method="POST">
                         <div class="form-group">
                             <div class="col-lg-12">
                                 <div class="input-group input-icon">
@@ -86,9 +86,9 @@
                     
                 </div>
                 <div class="panel-footer gray-lighter-bg bt">
-                    <h4 class="text-center"><strong>Don`t have an account ?</strong>
+                    <h4 class="text-center"><strong>Don't have an account ?</strong>
                     </h4>
-                    <p class="text-center"><a href="register.html" class="btn btn-primary">Create account</a>
+                    <p class="text-center"><a href="ALPHA_register.php" class="btn btn-primary">Create account</a>
                     </p>
                 </div>
             </div>
