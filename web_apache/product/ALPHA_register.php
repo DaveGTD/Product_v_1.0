@@ -59,11 +59,11 @@
                             <div class="col-lg-12">
                                 <div class="input-group input-icon">
                                     <span class="input-group-addon"><i class="fa fa-key"></i></span>
-                                    <input type="password" name="password" id="password" class="form-control" placeholder="Your password">
+                                    <input type="password" required="required" name="password" id="password" class="form-control" placeholder="Your password">
                                 </div>
                                 <div class="input-group input-icon">
                                     <span class="input-group-addon"><i class="fa fa-key"></i></span>
-                                    <input type="password" name="password1" id="password1" class="form-control" placeholder="Repeat password">
+                                    <input type="password" required="required" name="password_confirm" id="password_confirm" class="form-control" placeholder="Repeat password" oninput="check(this)">
                                 </div>
                             </div>
                         </div>
@@ -86,6 +86,19 @@
         <!-- End login container -->
 
         <!-- Javascripts -->
+        
+        <script language='javascript' type='text/javascript'>
+		    function check(input) {
+		        if (input.value != document.getElementById('password').value) {
+		            input.setCustomValidity('Password Must be Matching.');
+		        } else {
+		            // input is valid -- reset the error message
+		            input.setCustomValidity('');
+		        }
+		    }
+		</script>
+		
+		
         <!-- Important javascript libs(put in all pages) -->
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script>
