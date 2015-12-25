@@ -33,6 +33,14 @@
         <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
         <meta name="msapplication-TileColor" content="#3399cc" />
     </head>
+   
+   
+   
+   
+   
+   
+   
+   
     <body class="login-page">
         <!-- Start login container -->
         <div class="container login-container">
@@ -40,16 +48,17 @@
                 <!-- Start .panel -->
                 <div class="panel-heading">
                     <h4 class="panel-title text-center">
-                        <img id="logo" src="img/logo-dark.png" alt="Dynamic logo">
+                        DataHub
                     </h4>
                 </div>
+                
                 <div class="panel-body">
                     <form class="form-horizontal mt0" action="index.html" id="login-form" role="form">
                         <div class="form-group">
                             <div class="col-lg-12">
                                 <div class="input-group input-icon">
                                     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                    <input type="text" name="email" id="email" class="form-control" value="admin@dynamic.com" placeholder="Your email ...">
+                                    <input type="text" name="email" id="email" class="form-control" value="example@example.com" placeholder="Your email ...">
                                 </div>
                             </div>
                         </div>
@@ -57,7 +66,7 @@
                             <div class="col-lg-12">
                                 <div class="input-group input-icon">
                                     <span class="input-group-addon"><i class="fa fa-key"></i></span>
-                                    <input type="password" name="password" id="password" class="form-control" value="somepass" placeholder="Your password">
+                                    <input type="password" name="password" id="password" class="form-control" value="example" placeholder="Your password">
                                 </div>
                                 <span class="help-block text-right"><a href="#">Forgout password ?</a></span> 
                             </div>
@@ -74,14 +83,7 @@
                             </div>
                         </div>
                     </form>
-                    <div class="seperator">
-                        <strong>or</strong>
-                        <hr>
-                    </div>
-                    <div class="social-buttons text-center mt5 mb5">
-                        <a href="#" class="btn btn-primary btn-alt mr10">Sign in with <i class="fa fa-facebook s20 ml5 mr0"></i></a> 
-                        <a href="#" class="btn btn-danger btn-alt ml10">Sign in with <i class="fa fa-google-plus s20 ml5 mr0"></i></a> 
-                    </div>
+                    
                 </div>
                 <div class="panel-footer gray-lighter-bg bt">
                     <h4 class="text-center"><strong>Don`t have an account ?</strong>
@@ -93,11 +95,7 @@
             <!-- End .panel -->
         </div>
         <!-- End login container -->
-        <div class="container">
-            <div class="footer">
-                <p class="text-center">&copy;2014 Copyright Dynamic admin. All right reserved !!!</p>
-            </div>
-        </div>
+
         <!-- Javascripts -->
         <!-- Important javascript libs(put in all pages) -->
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
