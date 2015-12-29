@@ -1,7 +1,7 @@
 <?php 
 
 include 'secret.inc';
-var_dump($_POST);	
+// var_dump($_POST);	
 	
 	$email = $_POST['email'];
 	$password = $_POST['password'];
@@ -15,7 +15,8 @@ var_dump($_POST);
 	}
 	else
 	{
-		echo "Login Failed";
+		echo "<h4> Login Failed! </h4><br>";
+		echo "<strong> Please try again </strong>";
 	}
 	
 	
