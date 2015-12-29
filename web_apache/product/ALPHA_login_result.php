@@ -7,7 +7,7 @@ var_dump($_POST);
 	$password = $_POST['password'];
 	$conn = getConnection();
 	
-	$answer = true;
+	$answer = false;
 	
 	if($answer)
 	{
