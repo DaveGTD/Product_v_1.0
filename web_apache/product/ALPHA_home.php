@@ -38,109 +38,7 @@
         <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-        <!-- .page-navbar -->
-        <div id="header" class="page-navbar">
-            <!-- .navbar-brand -->
-            <a href="index.html" class="navbar-brand hidden-xs hidden-sm">
-                <img src="img/logo.png" class="logo hidden-xs" alt="Dynamic logo">
-                <img src="img/logosm.png" class="logo-sm hidden-lg hidden-md" alt="Dynamic logo">
-            </a>
-            <!-- / navbar-brand -->
-            <!-- .no-collapse -->
-            <div id="navbar-no-collapse" class="navbar-no-collapse">
-                <!-- top left nav -->
-                <ul class="nav navbar-nav">
-                    <li class="toggle-sidebar">
-                        <a href="#">
-                            <i class="fa fa-reorder"></i>
-                            <span class="sr-only">Collapse sidebar</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="reset-layout tipB" title="Reset panel position for this page"><i class="fa fa-history"></i></a>
-                    </li>
-                </ul>
-                <!-- / top left nav -->
-                <!-- top right nav -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown">
-                            <i class="fa fa-bell-o"></i>
-                            <span class="sr-only">Notifications</span>
-                            <span class="badge badge-danger">6</span>
-                        </a>
-                        <ul class="dropdown-menu right dropdown-notification" role="menu">
-                            <li><a href="#" class="dropdown-menu-header">Notifications</a>
-                            </li>
-                            <li><a href="#"><i class="l-basic-life-buoy"></i> 2 support request</a>
-                            </li>
-                            <li><a href="#"><i class="l-basic-gear"></i> Settings is changed</a>
-                            </li>
-                            <li><a href="#"><i class="l-weather-lightning"></i> 5 min server downtime</a>
-                            </li>
-                            <li><a href="#"><i class="l-basic-server2"></i> Databse backup is complete</a>
-                            </li>
-                            <li><a href="#"><i class="l-basic-lightbulb"></i> SuggeElson push 1 commit</a>
-                            </li>
-                            <li><a href="#" class="view-all">View all <i class="l-arrows-right"></i> </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" data-toggle="dropdown">
-                            <i class="fa fa-cog"></i>
-                            <span class="sr-only">Settings</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-form dynamic-settings right" role="menu">
-                            <li><a href="#" class="dropdown-menu-header">Template settings</a>
-                            </li>
-                            <li>
-                                <div class="toggle-custom">
-                                    <label class="toggle" data-on="ON" data-off="OFF">
-                                        <input type="checkbox" id="fixed-header-toggle" name="fixed-header-toggle" checked>
-                                        <span class="button-checkbox"></span>
-                                    </label>
-                                    <label for="fixed-header-toggle">Fixed header</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="toggle-custom">
-                                    <label class="toggle" data-on="ON" data-off="OFF">
-                                        <input type="checkbox" id="fixed-left-sidebar" name="fixed-left-sidebar" checked>
-                                        <span class="button-checkbox"></span>
-                                    </label>
-                                    <label for="fixed-left-sidebar">Fixed Left Sidebar</label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="toggle-custom">
-                                    <label class="toggle" data-on="ON" data-off="OFF">
-                                        <input type="checkbox" id="fixed-right-sidebar" name="fixed-right-sidebar" checked>
-                                        <span class="button-checkbox"></span>
-                                    </label>
-                                    <label for="fixed-right-sidebar">Fixed Right Sidebar</label>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="login.html">
-                            <i class="fa fa-power-off"></i>
-                            <span class="sr-only">Logout</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id="toggle-right-sidebar" href="#" class="tipB" title="Toggle right sidebar">
-                            <i class="l-software-layout-sidebar-right"></i>
-                            <span class="sr-only">Toggle right sidebar</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- / top right nav -->
-            </div>
-            <!-- / collapse -->
-        </div>
-        <!-- / page-navbar -->
+
         <!-- #wrapper -->
         <div id="wrapper">
             <!-- .page-sidebar -->
@@ -149,32 +47,7 @@
                 <div class="sidebar-inner">
                     <!-- Start .sidebar-scrollarea -->
                     <div class="sidebar-scrollarea">
-                        <!--  .sidebar-panel -->
-                        <div class="sidebar-panel">
-                            <h5 class="sidebar-panel-title">Profile</h5>
-                        </div>
-                        <!-- / .sidebar-panel -->
-                        <div class="user-info clearfix">
-                            <img src="img/avatars/128.jpg" alt="avatar">
-                            <span class="name">SuggeElson</span>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-xs"><i class="l-basic-gear"></i>
-                                </button>
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">settings <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu right" role="menu">
-                                    <li><a href="profile.html"><i class="fa fa-edit"></i>Edit profile</a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-money"></i>Windraws</a>
-                                    </li>
-                                    <li><a href="#"><i class="fa fa-credit-card"></i>Deposits</a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li><a href="login.html"><i class="fa fa-power-off"></i>Logout</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+ 
                         <!--  .sidebar-panel -->
                         <div class="sidebar-panel">
                             <h5 class="sidebar-panel-title">Navigation</h5>
@@ -323,27 +196,7 @@
                         </div>
                         <!-- / side-nav -->
                         <!--  .sidebar-panel -->
-                        <div class="sidebar-panel">
-                            <h5 class="sidebar-panel-title">Server stats</h5>
-                            <div class="sidebar-panel-content">
-                                <div class="sidebar-stat mb10">
-                                    <p class="color-white mb5 mt5"><i class="fa fa-hdd-o mr5"></i> Disk Space <span class="pull-right small">30%</span>
-                                    </p>
-                                    <div class="progress flat transparent progress-bar-xs">
-                                        <div class="progress-bar progress-bar-white" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
-                                    </div>
-                                    <span class="dib s12 mt5 per100 text-center">3001.56 / 10000 MB</span>
-                                </div>
-                                <div class="sidebar-stat">
-                                    <p class="color-white mb5 mt5"><i class="glyphicon glyphicon-transfer mr5"></i> Bandwidth Transfer <span class="pull-right small">78%</span>
-                                    </p>
-                                    <div class="progress flat transparent progress-bar-xs">
-                                        <div class="progress-bar progress-bar-white" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%;"></div>
-                                    </div>
-                                    <span class="dib s12 mb10 mt5 per100 text-center">87565.12 / 120000 MB</span>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                     <!-- End .sidebar-scrollarea -->
                 </div>
@@ -351,23 +204,7 @@
             </aside>
             <!-- / page-sidebar -->
                         
-        <!-- / #wrapper -->
-        <div id="footer" class="clearfix sidebar-page right-sidebar-page">
-            <!-- Start #footer  -->
-            <p class="pull-left">
-                Copyrights &copy; 2014 <a href="http://suggeelson.com/" class="color-blue strong" target="_blank">SuggeElson</a>. All rights reserved.
-            </p>
-            <p class="pull-right">
-                <a href="#" class="mr5">Terms of use</a>
-                |
-                <a href="#" class="ml5 mr25">Privacy police</a>
-            </p>
-        </div>
-        <!-- End #footer  -->
-        <!-- Back to top -->
-        <div id="back-to-top"><a href="#">Back to Top</a>
-        </div>
-        <!-- Javascripts -->
+          <!-- Javascripts -->
         <!-- Load pace first -->
         <script src="plugins/core/pace/pace.min.js"></script>
         <!-- Important javascript libs(put in all pages) -->
