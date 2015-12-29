@@ -49,7 +49,7 @@
                     <div class="sidebar-scrollarea">
 	                    
 	                    <div class="user-info clearfix">
-                            <img src="img/logo.png">
+                            <img src="img/company_logo.png">
                         </div>
                         
  
@@ -61,13 +61,13 @@
                         <!-- .side-nav -->
                         <div class="side-nav">
                             <ul class="nav">
-                                <li><a href="ALPHA_home.php.html"><i class="l-basic-laptop"></i><span class="txt">Home</span></a>
+                                <li><a href="ALPHA_home.php"><i class="l-basic-laptop"></i><span class="txt">Home</span></a>
                                 </li>
                                 <li>
                                     <a href="ALPHA_analyze.php"><i class="l-ecommerce-graph1"></i> <span class="txt">Analyze</span></a>
                                 </li>
                                 <li>
-                                    <a href="ALPHA_update"><i class="l-basic-webpage-txt"></i><span class="txt">Update</span></a>
+                                    <a href="ALPHA_update.php"><i class="l-basic-webpage-txt"></i><span class="txt">Update</span></a>
                                 </li>
                                 <li>
                                     <a href="ALPHA_report.php"><i class="l-software-layout-header-3columns"></i><span class="txt">Report</span></a>
