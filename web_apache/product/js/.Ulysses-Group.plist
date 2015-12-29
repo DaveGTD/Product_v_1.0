@@ -13,7 +13,7 @@
 	<key>sheetClusters</key>
 	<array>
 		<array>
-			<string>jquery.Dynamic.js</string>
+			<string>jquery.dynamic.js</string>
 		</array>
 		<array>
 			<string>jRespond.min.js</string>
