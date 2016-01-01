@@ -34,16 +34,7 @@
         <!-- Windows8 touch icon ( http://www.buildmypinnedsite.com/ )-->
         <meta name="msapplication-TileColor" content="#3399cc" />
         
-        <link rel="stylesheet" type="text/css" href="jquery.autocomplete.css" />
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript" src="jquery.autocomplete.js"></script>
-		<script>
-			$(document).ready(function(){
-			$("#tag").autocomplete("autocomplete.php", {
-			selectFirst: true
-			});
-			});
-		</script>
+		<link rel="stylesheet" type="text/css" href="jquery.autocomplete.css" />
 
     </head>
     <body>
@@ -176,7 +167,16 @@
 	
 							
 							
-			
+
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="jquery.autocomplete.js"></script>
+		<script>
+			$(document).ready(function(){
+			$("#tag").autocomplete("autocomplete.php", {
+			selectFirst: true
+			});
+			});
+		</script>	
 						
 						
            
