@@ -35,7 +35,7 @@
         <meta name="msapplication-TileColor" content="#3399cc" />
         
         <link rel="stylesheet" type="text/css" href="jquery.autocomplete.css" />
-
+		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="jquery.autocomplete.js"></script>
 		<script>
 			$(document).ready(function(){
@@ -182,6 +182,7 @@
            
                    <!-- Load pace first -->
         <script src="plugins/core/pace/pace.min.js"></script>
+        <!--
         <!-- Important javascript libs(put in all pages) -->
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script>
@@ -192,6 +193,7 @@
         window.jQuery || document.write('<script src="js/libs/jquery-ui-1.10.4.min.js">\x3C/script>')
         </script>
         <!--[if lt IE 9]>
+	    // -->
   <script type="text/javascript" src="js/libs/excanvas.min.js"></script>
   <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <script type="text/javascript" src="js/libs/respond.min.js"></script>
