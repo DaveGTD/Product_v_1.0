@@ -751,8 +751,8 @@ $.Autocompleter.Select = function (options, input, select, config) {
 						// IE doesn't recalculate width when scrollbar disappears
 						listItems.width( list.width() - parseInt(listItems.css("padding-left")) - parseInt(listItems.css("padding-right")) );
 					}
-*/
                 }
+*/
                 
             }
 		},
