@@ -58,7 +58,7 @@
                                     
                                     
                                     <div class="panel-body pt0 pb0">
-                                        <form class="form-horizontal group-border stripped" role="form" action="other.php" method="POST">
+                                        <form class="form-horizontal group-border stripped" role="form" action="ALPHA_create_database_result.php" method="POST">
                                             <div class="form-group">
 	                                            
 	                                                     
