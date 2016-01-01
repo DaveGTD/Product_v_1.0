@@ -739,6 +739,7 @@ $.Autocompleter.Select = function (options, input, select, config) {
 					overflow: 'auto'
 				});
 				
+/*
                 if($.browser.msie && typeof document.body.style.maxHeight === "undefined") {
 					var listHeight = 0;
 					listItems.each(function() {
@@ -750,6 +751,7 @@ $.Autocompleter.Select = function (options, input, select, config) {
 						// IE doesn't recalculate width when scrollbar disappears
 						listItems.width( list.width() - parseInt(listItems.css("padding-left")) - parseInt(listItems.css("padding-right")) );
 					}
+*/
                 }
                 
             }
