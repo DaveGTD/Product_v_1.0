@@ -79,6 +79,7 @@ $.Autocompleter = function(input, options) {
 	
 	var blockSubmit;
 	
+
 /*
 	// prevent form submit in opera when selecting with return key
 	$.browser.opera && $(input.form).bind("submit.autocomplete", function() {
@@ -88,7 +89,9 @@ $.Autocompleter = function(input, options) {
 		}
 	});
 */
+
 	
+/*
 	// only opera doesn't trigger keydown multiple times while pressed, others don't work with keypress at all
 	$input.bind(($.browser.opera ? "keypress" : "keydown") + ".autocomplete", function(event) {
 		// a keypress means the input has focus
@@ -201,6 +204,7 @@ $.Autocompleter = function(input, options) {
 		$(input.form).unbind(".autocomplete");
 	});
 	
+*/
 	
 	function selectCurrent() {
 		var selected = select.selected();
