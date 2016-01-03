@@ -67,30 +67,22 @@
 								
 										                      <tbody>
 										                          <tr>
-																  <td><input type="checkbox" required="required" name="chk[]" checked="checked" /></td>
+																  <td><input type="checkbox" name="chk[]" checked="unchecked" /></td>
 														<td>
-															<label>Name</label>
+															<label>COLUMN</label>
 															<input type="text" id="tag" required="required" name="BX_NAME[]">
 														 </td>
 														 <td>
-															<label for="BX_age">Age</label>
-															<input type="text" required="required" class="small"  name="BX_age[]">
-													     </td>
-														 <td>
-															<label for="BX_gender">Gender</label>
+															<label for="BX_gender">RULE</label>
 															<select id="BX_gender" name="BX_gender" required="required">
-																<option>....</option>
-																<option>Male</option>
-																<option>Female</option>
+																<option> (>) </option>
+																<option> (<) </option>
+																<option>  = </option>
 															</select>
 														 </td>
 														 <td>
-															<label for="BX_birth">Berth Pre</label>
-															<select id="BX_birth" name="BX_birth" required="required">
-																<option>....</option>
-																<option>Window</option>
-																<option>No Choice</option>
-															</select>
+															<label>COLUMN</label>
+															<input type="text" id="tag" required="required" name="BX_age[]">
 														 </td>
 										                          </tr>
 										                      </tbody>
@@ -129,7 +121,7 @@
 													newcell.innerHTML = table.rows[0].cells[i].innerHTML;
 												}
 											}else{
-												 alert("Maximum Passenger per ticket is 5.");
+												 alert("You need PRO to apply more than 5 rules");
 													   
 											}
 										}
@@ -142,7 +134,7 @@
 												var chkbox = row.cells[0].childNodes[0];
 												if(null != chkbox && true == chkbox.checked) {
 													if(rowCount <= 1) { 						// limit the user from removing all the fields
-														alert("Cannot Remove all the Passenger.");
+														alert("Must have atleast 1 rule.");
 														break;
 													}
 													table.deleteRow(i);
