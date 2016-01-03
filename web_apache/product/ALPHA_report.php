@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css">
   <link rel="stylesheet" href="bower_components/selectize/dist/css/selectize.bootstrap3.css">
 
-  <link rel="stylesheet" href="../dist/css/query-builder.default.css" id="qb-theme">
+  <link rel="stylesheet" href="query-builder.default.css" id="qb-theme">
   
   <link rel="stylesheet" href="http://mistic100.github.io/jQuery-QueryBuilder/assets/flags/flags.css">
   <style>
@@ -93,15 +93,15 @@
   </div>
 </div>
 
-<script src="../bower_components/jquery/dist/jquery.js"></script>
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="../bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-<script src="../bower_components/bootbox/bootbox.js"></script>
+<script src="bower_components_upper/jquery/dist/jquery.js"></script>
+<script src="bower_components_upper/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components_upper/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="bower_components_upper/bootbox/bootbox.js"></script>
 <script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
 <script src="bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
-<script src="../bower_components/jquery-extendext/jQuery.extendext.min.js"></script>
-<script src="../bower_components/sql-parser/browser/sql-parser.js"></script>
-<script src="../bower_components/doT/doT.js"></script>
+<script src="bower_components_upper/jquery-extendext/jQuery.extendext.min.js"></script>
+<script src="bower_components_upper/sql-parser/browser/sql-parser.js"></script>
+<script src="bower_components_upper/doT/doT.js"></script>
 
 <script src="../dist/js/query-builder.js"></script>
 
