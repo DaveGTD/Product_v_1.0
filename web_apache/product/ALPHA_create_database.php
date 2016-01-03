@@ -81,7 +81,7 @@
 															</select>
 														 </td>
 														 <td>
-															<label>COLUMN</label>
+															<label>COLUMN/VALUE</label>
 															<input type="text" id="tag" required="required" name="BX_age[]">
 														 </td>
 										                          </tr>
@@ -165,7 +165,7 @@
 		<script>
 			$(document).ready(function(){
 			$("#tag").autocomplete("autocomplete.php", {
-			selectFirst: true
+			selectFirst: false
 			});
 			});
 		</script>	
