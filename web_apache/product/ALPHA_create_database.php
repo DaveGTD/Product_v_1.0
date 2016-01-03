@@ -75,6 +75,7 @@
 														 <td>
 															<label for="op">RULE</label>
 															<select id="op" name="op" required="required">
+																<option> Select One </option>
 																<option> > </option>
 																<option> < </option>
 																<option> = </option>

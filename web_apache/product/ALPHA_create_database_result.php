@@ -1,6 +1,5 @@
 <?php
 	
-	// $chkbox = $_POST['chk'];
 	$ONE = $_POST['ONE'];
 	$op = $_POST['op'];
 	$TWO = $_POST['TWO'];
