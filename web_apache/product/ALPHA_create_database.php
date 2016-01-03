@@ -67,7 +67,7 @@
 								
 										                      <tbody>
 										                          <tr>
-																  <td><input type="checkbox" name="chk[]" checked="unchecked" /></td>
+																  <td><input type="checkbox" name="chk[]" /></td>
 														<td>
 															<label>COLUMN</label>
 															<input type="text" id="tag" required="required" name="BX_NAME[]">
