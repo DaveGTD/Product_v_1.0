@@ -2,16 +2,16 @@
 	
 	// $chkbox = $_POST['chk'];
 	$ONE = $_POST['ONE'];
-	$operator = $_POST['operator'];
+	$op = $_POST['op'];
 	$TWO = $_POST['TWO'];
 
 	
 	
 	foreach($ONE as $a => $b)
 	{
-		echo $ONE[$a];
-		echo $operator[$a];
-		echo $TWO[$a];
+		echo $ONE[$a] . '<br>';
+		echo $op[$a]  . '<br>';
+		echo $TWO[$a] . '<br>';
 	}
 	
 	

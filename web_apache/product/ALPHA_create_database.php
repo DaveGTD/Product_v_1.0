@@ -73,8 +73,8 @@
 															<input type="text" id="tag" required="required" name="ONE[]">
 														 </td>
 														 <td>
-															<label for="condition">RULE</label>
-															<select id="condition" name="condition" required="required">
+															<label for="op">RULE</label>
+															<select id="op" name="op" required="required">
 																<option> > </option>
 																<option> < </option>
 																<option> = </option>
