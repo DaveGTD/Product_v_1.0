@@ -103,7 +103,7 @@
 <script src="bower_components_upper/sql-parser/browser/sql-parser.js"></script>
 <script src="bower_components_upper/doT/doT.js"></script>
 
-<script src="../dist/js/query-builder.js"></script>
+<script src="query-builder.js"></script>
 
 <script>
 $('[data-toggle="tooltip"]').tooltip();
