@@ -164,13 +164,8 @@
 		<script type="text/javascript" src="jquery.autocomplete.js"></script>
 		<script>
 			$(document).ready(function(){
-			$("#tag").autocomplete("autocomplete.php", {
-			selectFirst: true
-			});
-			});
-			$("#other_tag").autocomplete("autocomplete.php", {
-			selectFirst: true
-			});
+			$("#tag").autocomplete("autocomplete.php", { selectFirst: true});
+			$("#other_tag").autocomplete("autocomplete.php", { selectFirst: true});			
 			});
 		</script>	
 						
