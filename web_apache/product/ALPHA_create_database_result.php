@@ -1,18 +1,17 @@
 <?php
 	
-	$chkbox = $_POST['chk'];
-	$BX_NAME=$_POST['BX_NAME'];
-	$BX_age=$_POST['BX_age'];			
-	$BX_gender=$_POST['BX_gender'];
-	$BX_birth=$_POST['BX_birth'];	
+	// $chkbox = $_POST['chk'];
+	$ONE = $_POST['ONE'];
+	$operator = $_POST['operator'];
+	$TWO = $_POST['TWO'];
+
 	
 	
-	foreach($BX_NAME as $a => $b)
+	foreach($ONE as $a => $b)
 	{
-		echo $BX_NAME[$a];
-		echo $BX_age[$a];
-		echo $BX_gender[$a];
-		echo $BX_birth[$a];
+		echo $ONE[$a];
+		echo $operator[$a];
+		echo $TWO[$a];
 	}
 	
 	

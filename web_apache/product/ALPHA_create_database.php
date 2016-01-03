@@ -70,19 +70,19 @@
 																  <td><input type="checkbox" name="chk[]" /></td>
 														<td>
 															<label>COLUMN</label>
-															<input type="text" id="tag" required="required" name="BX_NAME[]">
+															<input type="text" id="tag" required="required" name="ONE[]">
 														 </td>
 														 <td>
-															<label for="BX_gender">RULE</label>
-															<select id="BX_gender" name="BX_gender" required="required">
-																<option> (>) </option>
-																<option> (<) </option>
-																<option>  = </option>
+															<label for="condition">RULE</label>
+															<select id="condition" name="condition" required="required">
+																<option> > </option>
+																<option> < </option>
+																<option> = </option>
 															</select>
 														 </td>
 														 <td>
-															<label>COLUMN/VALUE</label>
-															<input type="text" id="other_tag" required="required" name="BX_age[]">
+															<label>COLUMN / VALUE</label>
+															<input type="text" id="other_tag" required="required" name="TWO[]">
 														 </td>
 										                          </tr>
 										                      </tbody>
