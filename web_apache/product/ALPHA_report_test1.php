@@ -128,7 +128,7 @@ var options = {
     {type: 'not_equal',        optgroup: 'basic'},
     {type: 'in',               optgroup: 'basic'},
     {type: 'not_in',           optgroup: 'basic'},
-    {type: 'less',             optgroup: 'numbers'},
+    {type: 'less',             optgroup: 'numbers', 'strings'},
     {type: 'less_or_equal',    optgroup: 'numbers'},
     {type: 'greater',          optgroup: 'numbers'},
     {type: 'greater_or_equal', optgroup: 'numbers'},
