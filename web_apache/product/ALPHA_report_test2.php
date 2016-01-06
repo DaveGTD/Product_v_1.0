@@ -164,6 +164,7 @@ var options = {
     },
     valueSetter: function(rule, value) {
       rule.$el.find('.rule-value-container select')[0].selectize.setValue(value);
+    	}
     }
 
     
