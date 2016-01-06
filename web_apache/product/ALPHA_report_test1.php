@@ -126,7 +126,6 @@ var options = {
   },
 
   // standard operators in custom optgroups
-/*
   operators: [
     {type: 'equal',            optgroup: 'basic'},
     {type: 'not_equal',        optgroup: 'basic'},
@@ -149,31 +148,6 @@ var options = {
     {type: 'is_null'      },
     {type: 'is_not_null'  }
   ],
-*/
-
-  operators: [
-    {type: 'equal',            optgroup: 'anna'},
-    {type: 'not_equal',        optgroup: 'anna'},
-    {type: 'in',               optgroup: 'anna'},
-    {type: 'not_in',           optgroup: 'basic'},
-    {type: 'less',             optgroup: 'anna'},
-    {type: 'less_or_equal',    optgroup: 'numbers'},
-    {type: 'greater',          optgroup: 'anna'},
-    {type: 'greater_or_equal', optgroup: 'numbers'},
-    {type: 'between',          optgroup: 'numbers'},
-    {type: 'not_between',      optgroup: 'numbers'},
-    {type: 'begins_with',      optgroup: 'strings'},
-    {type: 'not_begins_with',  optgroup: 'strings'},
-    {type: 'contains',         optgroup: 'strings'},
-    {type: 'not_contains',     optgroup: 'strings'},
-    {type: 'ends_with',        optgroup: 'strings'},
-    {type: 'not_ends_with',    optgroup: 'strings'},
-    {type: 'is_empty'     },
-    {type: 'is_not_empty' },
-    {type: 'is_null'      },
-    {type: 'is_not_null'  }
-  ],
-
 
   filters: [
   /*
@@ -191,6 +165,18 @@ var options = {
     unique: false
   },
 
+  {
+    id: 'Some Column 2',
+    label: {
+      en: 'Some Column 2'
+    },
+    type: 'numbers',
+    optgroup: 'anna',
+    default_value: 'Enter Something',
+    size: 100,
+    unique: false
+  },
+  
   /*
    * custom input
    */
