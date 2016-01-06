@@ -167,6 +167,7 @@ var options = {
 	   
    },
    
+/*
    {
 	   id: 'Time',
 	   label: {en: 'Time'},
@@ -175,6 +176,15 @@ var options = {
 	   default_value: 'Enter Date/Time/Date & Time',
 	   size: 100
 	   
+   },
+*/
+   
+   {
+    id: 'Time',
+    label: 'Time',
+    type: 'datetime',
+    plugin: 'datetimepicker',
+    plugin_config: {}
    }
 
   ]
@@ -336,6 +346,18 @@ $('.set-filters').on('click', function() {
   
   // also available : 'setFilters'
 });
+
+$('#builder-widgets').on('afterCreateRuleInput.queryBuilder', function(e, rule) {
+    if (rule.filter.id === 'date') {
+      var $input = rule.$el.find('.rule-value-container [name*=_value_]');
+      $input.on('dp.change', function() {
+          $input.trigger('change');
+      });
+    }
+});
+
+
+
 </script>
 
 </body>
