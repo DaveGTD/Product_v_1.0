@@ -170,7 +170,7 @@ var options = {
     label: {
       en: 'Some Column 2'
     },
-    type: 'numbers',
+    type: 'double',
     optgroup: 'anna',
     default_value: 'Enter Something',
     size: 100,
