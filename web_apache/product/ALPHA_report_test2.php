@@ -193,9 +193,9 @@ var options = {
       todayHighlight: true,
       autoclose: true
     }
-
-
-  ]
+    }
+    
+    ]
 };
 
 // Fix for Selectize
