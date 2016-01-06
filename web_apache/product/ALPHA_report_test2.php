@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>jQuery QueryBuilder Example</title>
+  <title>Report Test</title>
 
   <link rel="stylesheet" href="bower_components_upper/bootstrap/dist/css/bootstrap.min.css" id="bt-theme">
   <link rel="stylesheet" href="bower_components_upper/bootstrap-select/dist/css/bootstrap-select.min.css">
@@ -25,6 +25,7 @@
 <div class="container">
   <div class="col-md-12 col-lg-10 col-lg-offset-1">
 
+  <div id="builder"></div>
 
     <div class="btn-group">
       <button class="btn btn-default" disabled>Get:</button>
