@@ -109,6 +109,9 @@ var options = {
   optgroups: {
     core: {
       en: 'Core',
+    },
+    anna: {
+      en: 'anna',
     }
   },
 
@@ -123,12 +126,13 @@ var options = {
   },
 
   // standard operators in custom optgroups
+/*
   operators: [
     {type: 'equal',            optgroup: 'basic'},
     {type: 'not_equal',        optgroup: 'basic'},
     {type: 'in',               optgroup: 'basic'},
     {type: 'not_in',           optgroup: 'basic'},
-    {type: 'less',             optgroup: 'numbers', 'strings'},
+    {type: 'less',             optgroup: 'numbers'},
     {type: 'less_or_equal',    optgroup: 'numbers'},
     {type: 'greater',          optgroup: 'numbers'},
     {type: 'greater_or_equal', optgroup: 'numbers'},
@@ -145,6 +149,31 @@ var options = {
     {type: 'is_null'      },
     {type: 'is_not_null'  }
   ],
+*/
+
+  operators: [
+    {type: 'equal',            optgroup: 'anna'},
+    {type: 'not_equal',        optgroup: 'anna'},
+    {type: 'in',               optgroup: 'anna'},
+    {type: 'not_in',           optgroup: 'basic'},
+    {type: 'less',             optgroup: 'anna'},
+    {type: 'less_or_equal',    optgroup: 'numbers'},
+    {type: 'greater',          optgroup: 'anna'},
+    {type: 'greater_or_equal', optgroup: 'numbers'},
+    {type: 'between',          optgroup: 'numbers'},
+    {type: 'not_between',      optgroup: 'numbers'},
+    {type: 'begins_with',      optgroup: 'strings'},
+    {type: 'not_begins_with',  optgroup: 'strings'},
+    {type: 'contains',         optgroup: 'strings'},
+    {type: 'not_contains',     optgroup: 'strings'},
+    {type: 'ends_with',        optgroup: 'strings'},
+    {type: 'not_ends_with',    optgroup: 'strings'},
+    {type: 'is_empty'     },
+    {type: 'is_not_empty' },
+    {type: 'is_null'      },
+    {type: 'is_not_null'  }
+  ],
+
 
   filters: [
   /*
@@ -156,7 +185,7 @@ var options = {
       en: 'Some Column'
     },
     type: 'string',
-    optgroup: 'core',
+    optgroup: 'anna',
     default_value: 'Enter Something',
     size: 100,
     unique: false
