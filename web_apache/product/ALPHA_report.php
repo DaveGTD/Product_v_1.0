@@ -219,6 +219,20 @@ var options = {
     },
     operators: ['equal', 'not_equal', 'is_null', 'is_not_null']
   },
+    {
+    id: 'other',
+    label: 'Other',
+    type: 'string',
+    input: 'select',
+    optgroup: 'core',
+    placeholder: 'Select something',
+    values: {
+		'dave':'Aditya Dave',
+		'anna':'Anna Wernli',
+		'rae':'Rachel Wernli Anson'
+    },
+    operators: ['equal', 'not_equal', 'is_null', 'is_not_null']
+  },
   /*
    * Selectize
    */
