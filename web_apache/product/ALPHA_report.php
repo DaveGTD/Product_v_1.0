@@ -231,7 +231,7 @@ var options = {
 		'anna':'Anna Wernli',
 		'rae':'Rachel Wernli Anson'
     },
-    operators: ['equal', 'not_equal', 'is_null', 'is_not_null']
+    operators: ['equal', 'not_equal', 'is_null', 'is_not_null' , 'less']
   },
   /*
    * Selectize
