@@ -67,24 +67,25 @@
 								
 										                      <tbody>
 										                          <tr>
-																  <td><input type="checkbox" name="chk[]" /></td>
+														<td>
+															<input type="checkbox" name="chk[]" />
+														</td>
+														
 														<td>
 															<label>COLUMN</label>
 															<input type="text" id="tag" required="required" name="ONE[]">
 														 </td>
 														 <td>
-															<label for="op">RULE</label>
+															<label for="op">TYPE</label>
 															<select id="op" name="op" required="required">
 																<option> Select One </option>
-																<option> > </option>
-																<option> < </option>
-																<option> = </option>
+																<option> Number </option>
+																<option> Text </option>
+																<option> Date/Time </option>
 															</select>
 														 </td>
-														 <td>
-															<label>COLUMN / VALUE</label>
-															<input type="text" id="other_tag" required="required" name="TWO[]">
-														 </td>
+														 
+
 										                          </tr>
 										                      </tbody>
 

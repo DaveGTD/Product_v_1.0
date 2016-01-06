@@ -24,17 +24,8 @@
 
 <div class="container">
   <div class="col-md-12 col-lg-10 col-lg-offset-1">
-    <div class="page-header">
-      <a class="pull-right" href="https://github.com/mistic100/jQuery-QueryBuilder">
-        <img src="https://assets.github.com/images/icons/emoji/octocat.png" width=48px height=48px>
-      </a>
-      <h1>jQuery QueryBuilder <small>Example</small></h1>
-    </div>
 
-    <div class="alert alert-info alert-dismissible" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      You must execute <code>bower install</code> in the example directory to run this demo.
-    </div>
+
 
     <div class="well well-sm">
       <label>Theme:</label>
