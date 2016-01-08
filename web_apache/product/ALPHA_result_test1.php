@@ -741,7 +741,7 @@
         <script src="plugins/tables/datatables/dataTables.tableTools.js"></script>
         <script src="plugins/tables/datatables/dataTables.bootstrap.js"></script>
         <script src="plugins/tables/datatables/dataTables.responsive.js"></script>
-        <script src="js/jquery.dynamic.js"></script>
+        <script src="js/jquery.Dynamic.js"></script>
         <script src="js/main.js"></script>
         <script src="js/pages/tables-data.js"></script>
     </body>
