@@ -1,3 +1,53 @@
+<?php
+	
+	$host = "localhost";
+	$user = "root";
+	$password = "root";
+	$database = "test";
+	
+	$conn = new mysqli($host, $user, $password, $database);
+	$sql = 'SELECT * FROM users LIMIT 1';
+	$result = $conn->query($sql);
+
+
+
+    $field = mysql_num_fields( $query );
+    
+    for ( $i = 0; $i < $field; $i++ )
+    {
+        
+        $names[] = mysql_field_name( $query, $i );
+        
+    }
+
+	var_dump($names);
+
+
+
+/*
+	if ($result->num_rows > 0) 
+	{
+    	while($row = $result->fetch_assoc()) 
+    	{
+        
+    	}
+	} 
+	else
+	{
+    echo "0 results";
+	}
+*/
+	
+	
+	
+	
+	$conn->close();
+	
+?>
+
+
+
+
 <!doctype html>
 <!--[if lt IE 8]><html class="no-js lt-ie8"> <![endif]-->
 <html class="no-js">
