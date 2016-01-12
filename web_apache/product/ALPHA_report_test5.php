@@ -342,12 +342,13 @@ $('.parse-mongo').on('click', function() {
 
 <script>
 
-$.datetimepicker.setLocale('en');
+// $.datetimepicker.setLocale('en');
 
 $('#datetimepicker').datetimepicker({
 dayOfWeekStart : 1,
 lang:'en',
 format: 'Y-m-d H:i:s',
+// theme: 'dark',
 step:1
 });
 
@@ -365,8 +366,7 @@ $('#datetimepicker2').datetimepicker({
 });
 
 $('#datetimepicker3').datetimepicker({
-	format:'unixtime',
-	theme:'dark'
+	format:'unixtime'
 });
 	
 </script>
