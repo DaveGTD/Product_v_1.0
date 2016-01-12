@@ -102,6 +102,7 @@ $conn->close();
   <link rel="stylesheet" href="query-builder.default.css" id="qb-theme">
 
   <link rel="stylesheet" href="http://mistic100.github.io/jQuery-QueryBuilder/assets/flags/flags.css">
+  <link rel="stylesheet" href="jquery.datetimepicker.css">
   <style>
     .flag { display: inline-block; }
   </style>
@@ -123,6 +124,17 @@ $conn->close();
       <button class="btn btn-primary parse-sql" data-stmt="question_mark">SQL statement</button>
       <button class="btn btn-primary parse-mongo">MongoDB</button>
     </div>
+    
+	<div id="HelperTools">
+		
+	<h3>DateTimePicker</h3>
+	<input type="text" value="" id="datetimepicker"/><br><br>
+	<h3>TimePicker</h3>
+	<input type="text" id="datetimepicker1"/><br><br>
+	<h3>DatePicker</h3>
+	<input type="text" id="datetimepicker2"/><br><br>
+		
+	</div>
 
     <div id="result" class="hide">
       <h3>Output</h3>
@@ -142,6 +154,7 @@ $conn->close();
 <script src="bower_components_upper/doT/doT.js"></script>
 
 <script src="query-builder.js"></script>
+<script src="jquery.datetimepicker.full.js"></script>
 
 <script>
 
@@ -325,6 +338,38 @@ $('.parse-mongo').on('click', function() {
 
 
 </script>
+
+<script>
+
+$.datetimepicker.setLocale('en');
+
+$('#datetimepicker').datetimepicker({
+dayOfWeekStart : 1,
+lang:'en',
+disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
+startDate:	'1986/01/05'
+});
+$('#datetimepicker').datetimepicker({value:'2015/04/15 05:03',step:10});
+
+$('#datetimepicker1').datetimepicker({
+	datepicker:false,
+	format:'H:i',
+	step:5
+});
+$('#datetimepicker2').datetimepicker({
+	yearOffset:222,
+	lang:'ch',
+	timepicker:false,
+	format:'d/m/Y',
+	formatDate:'Y/m/d',
+	minDate:'-1970/01/02', // yesterday is minimum date
+	maxDate:'+1970/01/02' // and tommorow is maximum date calendar
+});
+
+	
+</script>
+
+
 
 </body>
 </html>
