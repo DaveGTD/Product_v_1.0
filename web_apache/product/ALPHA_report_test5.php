@@ -32,7 +32,7 @@ foreach ($nameAndType as $k => $v)
 		$nameAndType[$k] = 'text';
 	}
 	
-	if(contains($v, 'int') || contains($v, 'float') || contains($v, 'double'), contains($v, 'decimal'))
+	if(contains($v, 'int') || contains($v, 'float') || contains($v, 'double') || contains($v, 'decimal'))
 	{
 		$nameAndType[$k] = 'number';
 	}
