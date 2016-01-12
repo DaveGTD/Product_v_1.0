@@ -133,7 +133,8 @@ $conn->close();
 	<input type="text" id="datetimepicker1"/><br><br>
 	<h3>DatePicker</h3>
 	<input type="text" id="datetimepicker2"/><br><br>
-		
+	<h3>TimestampPicker</h3>
+	<input type="text" id="datetimepicker3"/><br><br>		
 	</div>
 
     <div id="result" class="hide">
@@ -356,12 +357,17 @@ $('#datetimepicker1').datetimepicker({
 	format:'H:i:s',
 	step:1
 });
+
 $('#datetimepicker2').datetimepicker({
 	lang:'en',
 	timepicker:false,
 	format:'Y-m-d'
 });
 
+$('#datetimepicker3').datetimepicker({
+	format:'unixtime',
+	theme:'dark'
+});
 	
 </script>
 
