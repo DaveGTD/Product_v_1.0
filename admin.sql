@@ -15,3 +15,12 @@ CREATE TABLE accounts
 	password TEXT NOT NULL,
 	PRIMARY KEY (user_id) 
 );
+
+CREATE TABLE time_test
+(
+	id INT NOT NULL AUTO_INCREMENT,
+	t TIME,
+	d DATE, 
+	dt DATETIME,
+	PRIMARY KEY (id) 
+);

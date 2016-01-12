@@ -353,17 +353,13 @@ step:1
 
 $('#datetimepicker1').datetimepicker({
 	datepicker:false,
-	format:'H:i',
-	step:5
+	format:'H:i:s',
+	step:0.1
 });
 $('#datetimepicker2').datetimepicker({
-	yearOffset:222,
-	lang:'ch',
+	lang:'en',
 	timepicker:false,
-	format:'d/m/Y',
-	formatDate:'Y/m/d',
-	minDate:'-1970/01/02', // yesterday is minimum date
-	maxDate:'+1970/01/02' // and tommorow is maximum date calendar
+	format:'Y-m-d'
 });
 
 	
