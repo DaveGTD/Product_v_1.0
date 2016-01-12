@@ -6,7 +6,7 @@ $host = "localhost";
 $user = "root";
 $password = "root";
 $database = "test";
-$table = 'users';
+$table = 'time_test';
 
 $conn = new mysqli($host, $user, $password, $database);
 $sql = "SELECT COLUMN_NAME,COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='$table'";
