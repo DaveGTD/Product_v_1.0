@@ -346,7 +346,8 @@ $.datetimepicker.setLocale('en');
 $('#datetimepicker').datetimepicker({
 dayOfWeekStart : 1,
 lang:'en',
-format: 'Y-m-d H:i:s'
+format: 'Y-m-d H:i:s',
+step:1
 });
 
 
