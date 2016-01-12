@@ -3,10 +3,10 @@
 $host = "localhost";
 $user = "root";
 $password = "root";
-$database = "test";
+$database = "product_v_1_0";
 
 $conn = new mysqli($host, $user, $password, $database);
-$sql = 'SELECT * FROM users';
+$sql = 'SELECT * FROM accounts';
 $result = $conn->query($sql);
 
 
