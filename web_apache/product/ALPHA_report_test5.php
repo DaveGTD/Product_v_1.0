@@ -223,19 +223,21 @@ var options = {
    
    <?php
 	
+	$numItems = count($nameAndType);
+	$i = 0;
 	foreach ($nameAndType as $k => $v)
 	{
-		echo "{ id:'". $k ."', label: {en: '". $k . "'}, type: '". $v ."'},";
-	}   
+		if(++$i != $numItems)
+		{	
+			echo "{ id:'". $k ."', label: {en: '". $k . "'}, type: '". $v ."'},";
+		}
+		else
+		{
+			echo "{ id:'". $k ."', label: {en: '". $k . "'}, type: '". $v ."'}";
+		}   
+	}
 	   
 	?>
-
-   {
-	   id: 'Ex. Col',
-	   label: {en: 'Ex. Col'},
-	   type: 'string',
-	   default_value: 'Enter Value',
-   }
 
 
     ]
