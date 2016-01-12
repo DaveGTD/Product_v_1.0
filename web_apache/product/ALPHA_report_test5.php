@@ -354,7 +354,7 @@ step:1
 $('#datetimepicker1').datetimepicker({
 	datepicker:false,
 	format:'H:i:s',
-	step:0.1
+	step:1
 });
 $('#datetimepicker2').datetimepicker({
 	lang:'en',
