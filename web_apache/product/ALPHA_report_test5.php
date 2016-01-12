@@ -50,7 +50,7 @@ function endsWith($haystack, $needle)
     return (substr($haystack, -$length) === $needle);
 }
 	
-// print_r($nameAndType);
+print_r($nameAndType);
 
 $conn->close();
 
