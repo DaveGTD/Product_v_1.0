@@ -25,7 +25,32 @@ if ($result->num_rows > 0)
 	}
 }
 	
-print_r($nameAndType);
+foreach ($nameAndType as $k => $v)
+{
+	if(startsWith($v, 'varchar') || startsWith($v, 'text'))
+	{
+		$nameAndType[$k] = 'text';
+	}
+}
+	
+	
+function startsWith($haystack, $needle)
+{
+     $length = strlen($needle);
+     return (substr($haystack, 0, $length) === $needle);
+}
+
+function endsWith($haystack, $needle)
+{
+    $length = strlen($needle);
+    if ($length == 0) {
+        return true;
+    }
+
+    return (substr($haystack, -$length) === $needle);
+}
+	
+// print_r($nameAndType);
 
 $conn->close();
 
