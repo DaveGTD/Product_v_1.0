@@ -20,7 +20,7 @@ if ($result->num_rows > 0)
 	{
 		$name = $row['COLUMN_NAME'];
 		$type = $row['COLUMN_TYPE'];
-		$nameAndType['$name'] = $type;
+		$nameAndType[$name] = $type;
 			
 	}
 }
