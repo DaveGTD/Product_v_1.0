@@ -340,11 +340,9 @@ $('#datetimepicker3').datetimepicker({
 
 $('#datetimepicker4').datetimepicker({
  timepicker:false,
- formatDate:'Y',
+ format:'Y',
  // minDate:'-1970/01/02',//yesterday is minimum date(for today use 0 or -1970/01/01)
  // maxDate:'+1970/01/02'//tommorow is maximum date calendar
- minDate:'0', // today is the min .. to blur m-d
- maxDate:'0'  // today is the max .. to blur m-d
 });
 	
 </script>
