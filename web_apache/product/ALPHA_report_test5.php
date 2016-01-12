@@ -346,10 +346,9 @@ $.datetimepicker.setLocale('en');
 $('#datetimepicker').datetimepicker({
 dayOfWeekStart : 1,
 lang:'en',
-disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
-startDate:	'1986/01/05'
+format: 'Y-m-d H:i:s'
 });
-$('#datetimepicker').datetimepicker({value:'2015/04/15 05:03',step:10});
+
 
 $('#datetimepicker1').datetimepicker({
 	datepicker:false,
