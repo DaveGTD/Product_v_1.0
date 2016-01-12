@@ -29,12 +29,12 @@ foreach ($nameAndType as $k => $v)
 {
 	if(contains($v , 'char') || contains($v, 'text') || contains($v, 'blob') || contains($v, 'enum'))
 	{
-		$nameAndType[$k] = 'text';
+		$nameAndType[$k] = 'string';
 	}
 	
 	if(contains($v, 'int') || contains($v, 'float') || contains($v, 'double') || contains($v, 'decimal'))
 	{
-		$nameAndType[$k] = 'number';
+		$nameAndType[$k] = 'double';
 	}
 }
 	
@@ -192,6 +192,15 @@ var options = {
   /*
    * basic
    */
+   
+   <?php
+	
+	foreach ($nameAndType as $k => $v)
+	{
+		echo "{ id:'". $k ."', label: {en: '". $k . "'}, type: '". $v ."'},";
+	}   
+	   
+	?>
 
    {
 	   id: 'Name',
