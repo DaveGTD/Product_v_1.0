@@ -32,19 +32,21 @@ foreach ($nameAndType as $k => $v)
 		$nameAndType[$k] = 'string';
 	}
 	
-	if(contains($v, 'int') || contains($v, 'float') || contains($v, 'double') || contains($v, 'decimal'))
+	if(contains($v, 'float') || contains($v, 'double') || contains($v, 'decimal'))
 	{
 		$nameAndType[$k] = 'double';
+	}
+	if(contains($v, 'int'))
+	{
+		$nameAndType[$k] = 'integer';
 	}
 }
 	
 /*
-	Time related types:
-	timestamp
+	Supported "time" types:
 	datetime
 	date
 	time
-	year
 	
 */
 	
@@ -76,17 +78,19 @@ function contains($haystack, $needle)
 	}
 }
 
-/*	
-// remove columns from array where type is year, ... do this for other types which are not not handled yet 
+	
+// NOTE: jquery query builder API doesn't support the type:'' as year... 
+// so we'll not includes mysql table columns which have 'year' as type for now 
+// remove columns from array where type is year, ... also do this for other types which are not not handled yet 
 
 foreach ($nameAndType as $k => $v)
 {
-	if(contains($v, 'year'))
+	if(contains($v, 'year') || contains($v, 'timestamp'))
 	{
 		unset($k);
 	}
 }
-*/
+
 	
 // print_r($nameAndType);
 
@@ -145,10 +149,13 @@ $conn->close();
 	<input type="text" id="datetimepicker1"/><br><br>
 	<h3>Date Picker</h3>
 	<input type="text" id="datetimepicker2"/><br><br>
+	<!-- Disabled for now ..
 	<h3>Timestamp Picker</h3>
 	<input type="text" id="datetimepicker3"/><br><br>
 	<h3>Year Picker</h3>
 	<input type="text" id="datetimepicker4"/><br><br>		
+	-->
+	
 	</div>
 
     <div id="result" class="hide">
