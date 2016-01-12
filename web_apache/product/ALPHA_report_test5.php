@@ -27,9 +27,14 @@ if ($result->num_rows > 0)
 	
 foreach ($nameAndType as $k => $v)
 {
-	if(startsWith($v, 'varchar') || startsWith($v, 'text'))
+	if(contains($v , 'char') || contains($v, 'text') || contains($v, 'blob') || contains($v, 'enum'))
 	{
 		$nameAndType[$k] = 'text';
+	}
+	
+	if(contains($v, 'int') || contains($v, 'float') || contains($v, 'double'), contains($v, 'decimal'))
+	{
+		$nameAndType[$k] = 'number';
 	}
 }
 	
@@ -48,6 +53,18 @@ function endsWith($haystack, $needle)
     }
 
     return (substr($haystack, -$length) === $needle);
+}
+
+function contains($haystack, $needle)
+{
+	if (strpos($haystack, $needle) !== FALSE)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }
 	
 print_r($nameAndType);
