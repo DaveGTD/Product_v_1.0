@@ -75,8 +75,20 @@ function contains($haystack, $needle)
 		return false;
 	}
 }
+
+/*	
+// remove columns from array where type is year, ... do this for other types which are not not handled yet 
+
+foreach ($nameAndType as $k => $v)
+{
+	if(contains($v, 'year'))
+	{
+		unset($k);
+	}
+}
+*/
 	
-print_r($nameAndType);
+// print_r($nameAndType);
 
 $conn->close();
 
@@ -127,14 +139,16 @@ $conn->close();
     
 	<div id="HelperTools">
 		
-	<h3>DateTimePicker</h3>
+	<h3>Date & Time Picker</h3>
 	<input type="text" value="" id="datetimepicker"/><br><br>
-	<h3>TimePicker</h3>
+	<h3>Time Picker</h3>
 	<input type="text" id="datetimepicker1"/><br><br>
-	<h3>DatePicker</h3>
+	<h3>Date Picker</h3>
 	<input type="text" id="datetimepicker2"/><br><br>
-	<h3>TimestampPicker</h3>
-	<input type="text" id="datetimepicker3"/><br><br>		
+	<h3>Timestamp Picker</h3>
+	<input type="text" id="datetimepicker3"/><br><br>
+	<h3>Year Picker</h3>
+	<input type="text" id="datetimepicker4"/><br><br>		
 	</div>
 
     <div id="result" class="hide">
@@ -217,57 +231,11 @@ var options = {
 	?>
 
    {
-	   id: 'Name',
-	   label: {en: 'Name'},
+	   id: 'Ex. Col',
+	   label: {en: 'Ex. Col'},
 	   type: 'string',
-	   // optgroup: 'Core',
-	   default_value: 'Enter Name',
-	   size: 100
-
-   },
-
-   {
-	   id: 'Time',
-	   label: {en: 'Time'},
-	   type: 'datetime',
-	   // optgroup: 'Core',
-	   default_value: 'Enter Date/Time/Date & Time',
-	   size: 100
-
-   },
-
-   {
-    id: 'State',
-    label: 'State',
-    type: 'string',
-    input: 'select',
-    multiple: true,
-    plugin: 'selectize',
-    plugin_config: {
-      valueField: 'id',
-      labelField: 'name',
-      searchField: 'name',
-      sortField: 'name',
-      options: [
-        { id: "AL", name: "Alabama" },
-        { id: "AK", name: "Alaska" },
-        { id: "AZ", name: "Arizona" },
-        { id: "AR", name: "Arkansas" },
-        { id: "CA", name: "California" },
-        { id: "CO", name: "Colorado" },
-        { id: "CT", name: "Connecticut" },
-        { id: "DE", name: "Delaware" },
-        { id: "DC", name: "District of Columbia" },
-        { id: "FL", name: "Florida" },
-        { id: "GA", name: "Georgia" },
-        { id: "HI", name: "Hawaii" },
-        { id: "ID", name: "Idaho" }
-      ]
-    },
-    valueSetter: function(rule, value) {
-      rule.$el.find('.rule-value-container select')[0].selectize.setValue(value);
-    	}
-    }
+	   default_value: 'Enter Value',
+   }
 
 
     ]
@@ -354,6 +322,7 @@ step:1
 
 
 $('#datetimepicker1').datetimepicker({
+	lang: 'en',
 	datepicker:false,
 	format:'H:i:s',
 	step:1
@@ -367,6 +336,15 @@ $('#datetimepicker2').datetimepicker({
 
 $('#datetimepicker3').datetimepicker({
 	format:'unixtime'
+});
+
+$('#datetimepicker4').datetimepicker({
+ timepicker:false,
+ formatDate:'Y',
+ // minDate:'-1970/01/02',//yesterday is minimum date(for today use 0 or -1970/01/01)
+ // maxDate:'+1970/01/02'//tommorow is maximum date calendar
+ minDate:'0', // today is the min .. to blur m-d
+ maxDate:'0'  // today is the max .. to blur m-d
 });
 	
 </script>
