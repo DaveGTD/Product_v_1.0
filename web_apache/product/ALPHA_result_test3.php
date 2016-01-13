@@ -1,6 +1,8 @@
 <?php
 
-$sqlAppend = $_POST['tableSQL'];
+// $sqlAppend = $_POST['tableSQL'];
+
+$sqlAppend = 'id > 12';
 
 $host = "localhost";
 $user = "root";
