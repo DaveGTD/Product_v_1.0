@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 	
 // get the column names and types 
 	
@@ -8,7 +10,8 @@ $password = "root";
 $database = "test";
 $table = 'users';
 
-$_POST['table'] = $table;
+$_SESSION['table'] = 'users';
+
 
 $conn = new mysqli($host, $user, $password, $database);
 $sql = "SELECT COLUMN_NAME,COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='$table'";
@@ -171,6 +174,7 @@ $conn->close();
     <div id="submitForm">
 	    <form action="ALPHA_result_test3.php" method="POST">
 		<input type="hidden" id="tableSQL" name="tableSQL" value="">
+		<input type="hidden" id="tableName" name="tableName" value="">
 		<input class="btn btn-primary sub" type="submit" value="Submit">
 		</form>
     </div>
@@ -327,6 +331,7 @@ $('.parse-mongo').on('click', function() {
 $('.sub').on('click', function() {
   var res = $('#builder').queryBuilder('getSQL', false, true);
   $("#tableSQL").val(res.sql);
+  $("#tableName").val(<?php echo $table; ?>);
 });
 
 
