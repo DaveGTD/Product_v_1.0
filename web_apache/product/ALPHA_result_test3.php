@@ -5,7 +5,7 @@ $sqlAppend = $_POST['tableSQL'];
 $host = "localhost";
 $user = "root";
 $password = "root";
-$database = "product_v_1_0";
+$database = "test";
 $table = "users";
 
 $conn = new mysqli($host, $user, $password, $database);
