@@ -6,7 +6,7 @@ $host = "localhost";
 $user = "root";
 $password = "root";
 $database = "product_v_1_0";
-$table = $_POST['table'];
+$table = "users";
 
 $conn = new mysqli($host, $user, $password, $database);
 $sql = "SELECT * FROM '$table' WHERE " . $sqlAppend ;
