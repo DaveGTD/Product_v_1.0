@@ -9,8 +9,13 @@ $database = "test";
 $table = "users";
 
 $conn = new mysqli($host, $user, $password, $database);
-$sql = "SELECT * FROM users WHERE " . $sqlAppend ;
+$sql = "SELECT * FROM users WHERE $sqlAppend";
 $result = $conn->query($sql);
+
+if(!$result)
+{
+	echo mysql_error($conn);
+}
 
 if ($result->num_rows > 0) 
 {
