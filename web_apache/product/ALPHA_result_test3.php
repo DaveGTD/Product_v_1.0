@@ -11,6 +11,7 @@ $user = "root";
 $password = "root";
 $database = "test";
 $table = $_SESSION['table'];
+echo $table . '<br>';
 
 $conn = new mysqli($host, $user, $password, $database);
 $sql = "SELECT * FROM '$table' WHERE " . $sqlAppend;
