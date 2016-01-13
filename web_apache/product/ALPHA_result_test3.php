@@ -3,10 +3,8 @@
 session_start();
 
 $sqlAppend = $_POST['tableSQL'];
-$table = $_POST['tableName'];
 
 // echo $sqlAppend;
-echo $table . '<br>';
 
 $host = "localhost";
 $user = "root";
@@ -15,7 +13,7 @@ $database = "test";
 
 
 $conn = new mysqli($host, $user, $password, $database);
-$sql = "SELECT * FROM '$table' WHERE " . $sqlAppend;
+$sql = "SELECT * FROM users WHERE " . $sqlAppend;
 $result = $conn->query($sql);
 
 
