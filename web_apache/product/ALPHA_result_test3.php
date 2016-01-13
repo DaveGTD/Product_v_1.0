@@ -16,7 +16,10 @@ $sql = "SELECT * FROM users WHERE " . $sqlAppend;
 $result = $conn->query($sql);
 
 
-echo mysql_error($conn);
+if(!$result)
+{
+	echo $conn->error;
+}
 
 
 if ($result->num_rows > 0) 
