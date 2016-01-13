@@ -14,7 +14,7 @@ $table = "users";
 
 
 $conn = new mysqli($host, $user, $password, $database);
-$sql = "SELECT * FROM '$table' WHERE " . $sqlAppend;
+$sql = "SELECT * FROM $table WHERE " . $sqlAppend;
 $result = $conn->query($sql);
 
 
