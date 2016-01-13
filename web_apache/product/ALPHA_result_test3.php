@@ -4,7 +4,7 @@ session_start();
 
 $sqlAppend = $_POST['tableSQL'];
 
-echo $sqlAppend;
+// echo $sqlAppend;
 
 $host = "localhost";
 $user = "root";
@@ -23,6 +23,7 @@ if(!$result)
 }
 
 
+/*
 if ($result->num_rows > 0) 
 {
     while($row = $result->fetch_assoc()) 
@@ -37,6 +38,7 @@ else
 {
     echo "0 results";
 }
+*/
 
 ?>
 
