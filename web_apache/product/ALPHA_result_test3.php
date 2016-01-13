@@ -13,7 +13,7 @@ $database = "test";
 $table = $_SESSION['table'];
 
 $conn = new mysqli($host, $user, $password, $database);
-$sql = "SELECT * FROM users WHERE " . $sqlAppend;
+$sql = "SELECT * FROM '$table' WHERE " . $sqlAppend;
 $result = $conn->query($sql);
 
 
