@@ -167,7 +167,7 @@ $conn->close();
     </div>
     
     <div id="submitForm">
-	    <form action="ALPHA_report_test6.php" method="POST">
+	    <form action="ALPHA_result_test3.php" method="POST">
 		<input type="hidden" id="tableSQL" name="tableSQL" value="">
 		<input class="btn btn-primary sub" type="submit" value="Submit">
 		</form>
