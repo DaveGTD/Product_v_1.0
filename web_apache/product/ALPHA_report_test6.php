@@ -326,7 +326,7 @@ $('.parse-mongo').on('click', function() {
 
 $('.sub').on('click', function() {
   var res = $('#builder').queryBuilder('getSQL', false, true);
-  $("#tableSQL").val(JSON.stringify(res.sql));
+  $("#tableSQL").val(res.sql);
 });
 
 

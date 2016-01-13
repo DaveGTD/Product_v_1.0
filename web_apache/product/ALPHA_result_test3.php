@@ -1,7 +1,7 @@
 <?php
 
 $sqlAppend = $_POST['tableSQL'];
-str_replace('"', "", $sqlAppend);
+
 
 echo $sqlAppend;
 
