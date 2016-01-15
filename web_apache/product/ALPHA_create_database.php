@@ -123,7 +123,7 @@
 													newcell.innerHTML = table.rows[0].cells[i].innerHTML;
 												}
 											}else{
-												 alert("You need PRO to apply more than 5 rules");
+												 alert("You need PRO to create more than 5 columns");
 													   
 											}
 										}
@@ -136,7 +136,7 @@
 												var chkbox = row.cells[0].childNodes[0];
 												if(null != chkbox && true == chkbox.checked) {
 													if(rowCount <= 1) { 						// limit the user from removing all the fields
-														alert("Must have atleast 1 rule.");
+														alert("Must have atleast 1 column.");
 														break;
 													}
 													table.deleteRow(i);
@@ -166,8 +166,7 @@
 		<script type="text/javascript" src="jquery.autocomplete.js"></script>
 		<script>
 			$(document).ready(function(){
-			$("#tag").autocomplete("autocomplete.php", { selectFirst: true});
-			$("#other_tag").autocomplete("autocomplete.php", { selectFirst: true});			
+			$("#tag").autocomplete("autocomplete.php", { selectFirst: true});			
 			});
 		</script>	
 						
