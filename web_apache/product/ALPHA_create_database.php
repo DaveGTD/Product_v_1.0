@@ -211,7 +211,7 @@
         <script src="plugins/forms/bootstrap-markdown/bootstrap-markdown.js"></script>
         <script src="plugins/forms/dropzone/dropzone.js"></script>
         <script src="plugins/charts/sparklines/jquery.sparkline.js"></script>
-        <script src="js/jquery.Dynamic.js"></script>
+        <!-- <script src="js/jquery.Dynamic.js"></script>  -->
         <script src="js/main.js"></script>
         <script src="js/pages/forms-advanced.js"></script>
     </body>
