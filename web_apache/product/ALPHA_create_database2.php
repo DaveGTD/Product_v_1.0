@@ -21,8 +21,8 @@
 						              	
 
 	
-		
-				<table id="editable-table">
+			<div>
+				<table id="editable-table" class="form">
 
 					<tbody>
 						<tr>
@@ -52,7 +52,7 @@
 
 				</table>
 
-	
+			</div>
 		
 				
 				
