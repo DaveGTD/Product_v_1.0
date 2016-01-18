@@ -16,48 +16,14 @@
 	    	<br><br>
  
 
-			<button type="button"  onclick="addRow('editable-table')">ADD</button>
-			<button type="button"  onclick="deleteRow('editable-table')">DEL</button>
+			<button type="button"  onclick="addRow('dataTable')">ADD</button>
+			<button type="button"  onclick="deleteRow('dataTable')">DEL</button>
 						              	
 
 	
-			<div>
-				<table id="editable-table" class="form">
-
-					<tbody>
-						<tr>
-							<p>
-							<td>
-								<input type="checkbox" required="required" name="chk[]" />
-							</td>
-
-							<td>
-								<label>COLUMN</label>
-								<input type="text" id="tag" required="required" name="ONE[]">
-							</td>
-														 
-							<td>
-								<label for="op">TYPE</label>
-									<select id="op" name="op" required="required">
-										<option> Select One </option>
-										<option> Number </option>
-										<option> Text </option>
-										<option> Date/Time </option>
-									</select>
-							</td>
-							</p>
-						</tr>
-					</tbody>
-
-
-				</table>
-
-			</div>
 		
 				
-				
-				<!--
-			
+
 			             <table id="dataTable" class="form" border="1">
                   <tbody>
                     <tr>
@@ -92,7 +58,7 @@
                     </tbody>
                 </table>
 
-				-->
+			
 
 
 			<button type="submit">Submit</button> 
