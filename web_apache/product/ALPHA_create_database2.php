@@ -22,7 +22,7 @@
 
 	
 			<div>
-				<table id="editable-table" class="form">
+				<table id="editable-table">
 
 					<tbody>
 						<tr>
