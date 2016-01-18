@@ -67,8 +67,9 @@
 								
 										                      <tbody>
 										                          <tr>
+											                          <p>
 														<td>
-															<input type="checkbox" name="chk[]" />
+															<td><input type="checkbox" required="required" name="chk[]" /></td>
 														</td>
 														
 														<td>
@@ -85,7 +86,7 @@
 															</select>
 														 </td>
 														 
-
+											                          </p>
 										                          </tr>
 										                      </tbody>
 
