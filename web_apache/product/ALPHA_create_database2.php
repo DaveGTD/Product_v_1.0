@@ -27,7 +27,7 @@
 					<tbody>
 						<tr>
 							<p>
-							<td><input type="checkbox" required="required" name="chk[]" /></td>
+							<td><input type="checkbox" name="chk[]" /></td>
 
 							<td>
 								<label>COLUMN</label>
