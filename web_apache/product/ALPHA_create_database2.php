@@ -21,7 +21,7 @@
 						              	
 
 	
-			<div>
+		
 				<table id="editable-table">
 
 					<tbody>
@@ -52,7 +52,7 @@
 
 				</table>
 
-			</div>
+	
 		
 				
 				
