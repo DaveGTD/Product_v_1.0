@@ -56,7 +56,7 @@
                                                 <br><br>
                                                 
                                                 <div class="panel-heading">
-	                                                <h4 class="panel-title"> Rules </h4>
+	                                                <h4 class="panel-title"> Columns </h4>
 													<button type="button" class="btn btn-success mr5 mb10" onclick="addRow('editable-table')">ADD</button>
 													<button type="button" class="btn btn-danger mr5 mb10" onclick="deleteRow('editable-table')">DEL</button>
 						              			</div>
@@ -71,12 +71,12 @@
 															<td><input type="checkbox" name="chk[]" /></td>
 								
 															<td>
-																<label>COLUMN</label>
+																<label> COLUMN   </label>
 																<input type="text" id="tag" required="required" name="ONE[]">
 															</td>
 																						 
 															<td>
-																<label for="op">TYPE</label>
+																<label for="op">   TYPE  </label>
 																	<select id="op" name="op" required="required">
 																		<option> Select One </option>
 																		<option> Number </option>
