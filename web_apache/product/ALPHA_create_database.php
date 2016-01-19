@@ -71,12 +71,12 @@
 															<td><input type="checkbox" name="chk[]" /></td>
 								
 															<td>
-																<label> COLUMN   </label>
+																<label> &nbsp COLUMN  &nbsp </label>
 																<input type="text" id="tag" required="required" name="ONE[]">
 															</td>
 																						 
 															<td>
-																<label for="op">   TYPE  </label>
+																<label for="op">  &nbsp TYPE &nbsp </label>
 																	<select id="op" name="op" required="required">
 																		<option> Select One </option>
 																		<option> Number </option>
