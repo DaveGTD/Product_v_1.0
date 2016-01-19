@@ -81,14 +81,14 @@ var rules_widgets = {
 };
 
 // Fix for Selectize
-$('#builder-widgets').on('afterCreateRuleInput.queryBuilder', function(e, rule) {
+$('#builder').on('afterCreateRuleInput.queryBuilder', function(e, rule) {
   if (rule.filter.plugin == 'selectize') {
     rule.$el.find('.rule-value-container').css('min-width', '200px')
       .find('.selectize-control').removeClass('form-control');
   }
 });
 
-$('#builder-widgets').queryBuilder({
+$('#builder').queryBuilder({
   plugins: ['bt-tooltip-errors'],
 
   filters: [{
